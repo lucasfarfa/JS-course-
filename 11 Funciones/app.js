@@ -9,3 +9,6 @@ function MostrarMesaje(/*Parametros*/) { // CamelCase -> La primer letra de cada
 
 let xd = MostrarMesaje();  // llamo func y asigno su return a xd
 console.log(xd); // imprimo contenido de xd
+
+console.log(Math.max(2,4)); // Ej de func ya definida por JS
+// Devuelve el maximo de una lista de numeros ->> 4
