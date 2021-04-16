@@ -68,11 +68,33 @@ console.log("\nEx 3: Chessboard");
 let size = 8; // Tamano del tablero
 let tablero = "";
 
-for (let y = 0; y <= 8 ; y++) { // Genera una linea nueva hasta 8
+for (let y = 0; y <= 8; y++) { // Genera una linea nueva hasta 8
     for (let x = 0; x <= size; x++) {
-        if ((x+y)%2 === 0) tablero += " ";
+        if ((x + y) % 2 === 0) tablero += " ";
         else tablero += "#";
     }
     tablero += "\n"
 }
 console.log(tablero);
+
+/** Write a program that prints two numbers
+ * the numbers of cows and chickens on a farm, with the words cows and chickens
+ * after them and zeros padded beforee both nums so that they are always 3 digits long.
+ * 007 cows
+ * 011 chickens
+ */
+
+function printFarmInventory(cows, chickens) {
+    let cowString = String(cows);
+    while (cowString.length < 3) {
+        cowString = "0" + cowString; // le agrega el 0 adelante
+    }
+    console.log(`${cowString} Cows`); // imprimo vacas
+
+    let chickenString = String(chickens);
+    while (chickenString.length < 3) {
+        chickenString = "0" + chickenString; // le agrega el 0 adelante
+    }
+    console.log(`${chickenString} Chickens`); // imprimo vacas
+}
+printFarmInventory(7, 11);
